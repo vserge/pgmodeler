@@ -231,10 +231,10 @@ linux: {
 }
 
 macx {
-  !defined(PGSQL_LIB, var): PGSQL_LIB = /Library/PostgreSQL/14/lib/libpq.dylib
-  !defined(PGSQL_INC, var): PGSQL_INC = /Library/PostgreSQL/14/include
-  !defined(XML_INC, var): XML_INC = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2
-  !defined(XML_LIB, var): XML_LIB = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libxml2.tbd
+  !defined(PGSQL_LIB, var): PGSQL_LIB = /usr/local/Cellar/libpq/15.2/lib/libpq.dylib
+  !defined(PGSQL_INC, var): PGSQL_INC = /usr/local/Cellar/libpq/15.2/include
+  !defined(XML_INC, var): XML_INC = /usr/local/Cellar/libxml2/2.10.3_2/include/libxml2
+  !defined(XML_LIB, var): XML_LIB = /usr/local/Cellar/libxml2/2.10.3_2/lib/libxml2.dylib
   INCLUDEPATH += "$$PGSQL_INC" "$$XML_INC"
 }
 
